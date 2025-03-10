@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ApolloWrapper } from "../lib/ApolloWrapper";
 import "./globals.css";
 
-import ReactQueryProvider from "../lib/ReactQueryProvider"
+import ReactQueryWrapper from "../lib/ReactQueryWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,8 +30,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ReactQueryProvider>
-          <ApolloWrapper>{children}</ApolloWrapper></ReactQueryProvider>
+        <ReactQueryWrapper>
+          <ApolloWrapper>{children}</ApolloWrapper>
+        </ReactQueryWrapper>
       </body>
     </html>
   );

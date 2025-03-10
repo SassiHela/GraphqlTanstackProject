@@ -1,0 +1,32 @@
+* [31m10d4dc9[m -[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m Added my project [32m(Hela il y a 16 heures)[m
+  
+  A	.gitignore
+  A	README.md
+  A	eslint.config.mjs
+  A	next.config.ts
+  A	package-lock.json
+  A	package.json
+  A	postcss.config.mjs
+  A	public/background-pokemon.jpg
+  A	public/file.svg
+  A	public/globe.svg
+  A	public/next.svg
+  A	public/vercel.svg
+  A	public/window.svg
+  A	src/app/favicon.ico
+  A	src/app/globals.css
+  A	src/app/layout.tsx
+  A	src/app/page.tsx
+  A	src/app/pokemon/[slug]/page.tsx
+  A	src/components/ErrorPage.tsx
+  A	src/components/PokemonPage.tsx
+  A	src/components/SearchPage.tsx
+  A	src/components/StatChart.tsx
+  A	src/globals.css
+  A	src/lib/ApolloWrapper.js
+  A	src/lib/ReactQueryProvider.js
+  A	src/lib/apolloClient.js
+  A	src/lib/fetchPokemonGraphql.ts
+  A	src/lib/fetchPokemonRest.ts
+  A	src/lib/pokemonColor.ts
+  A	tsconfig.json
