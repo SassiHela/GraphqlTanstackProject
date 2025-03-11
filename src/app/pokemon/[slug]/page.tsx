@@ -49,7 +49,8 @@ export default function PokemonDetails() {
             return (
               <div
                 key={index}
-                className={`${typeColors[type.type?.name || "normal"]} col-span-2 p-2 rounded-xl text-center`}
+                className={`col-span-2 p-2 rounded-xl text-center`}
+                style={{ backgroundColor: bgColor }}
               >
                 {type.type?.name?.toUpperCase()}
               </div>
@@ -62,7 +63,6 @@ export default function PokemonDetails() {
         </div>
 
         <div className="flex flex-row gap-20">
-
           {evolutions?.map((pokemon: any, index: number) => (
             <img
               key={index}
@@ -73,20 +73,10 @@ export default function PokemonDetails() {
           ))}
         </div>
 
-
-
-
-
         <div className={`p-2 rounded-xl`} style={{ backgroundColor: bgColor }}>
           STATS
         </div>
-        <StatsChart props={extractedStats} color={bgColor} />
-
-
-
-
-
-
+        <StatsChart data={extractedStats} color={bgColor} />
       </main>
     </div>
   );

@@ -1,11 +1,8 @@
 "use client";
 import React from "react";
-import { BarChart, Bar, CartesianGrid, XAxis, YAxis } from "recharts";
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 
 export default function StatsChart({ data, color }: any) {
-
-
-
   return (
     <BarChart width={600} height={300} data={data}>
       <Bar dataKey="value" fill={color} />
